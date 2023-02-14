@@ -3,30 +3,46 @@ import React from "react";
 
 
 
-const List = () => {
-
-
+const List = ({ TodoslosPjtas, personajesAll }) => {
   return (
-    <div className="text-white">
-      <button className="bg-sky-800 text-white p-2 rounded-md m-1" >Todos los Personajes</button>
-      <button className="bg-sky-800 text-white p-2 rounded-md m-1">Limpiar lista</button>
+    <div className="">
+      {personajesAll.length === 0?
+      <>
+      <button
+        onClick={TodoslosPjtas}
+        className="bg-sky-800  p-2 rounded-md m-1" >
+        llenar lista
+      </button>
       
-      <table class="table-fixed">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Genero</th>
-            <th>Tierra natal</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Luke Skywalker</td>
-            <td>hombre</td>
-            <td>tatooine</td>
-          </tr>
-        </tbody>
-      </table>
+      </>:
+      <button
+        onClick={TodoslosPjtas}
+        className="bg-sky-800  p-2 rounded-md m-1" >
+        Vaciar lista
+      </button>
+
+      }
+
+      <select>
+        {personajesAll.length === 0 ? 
+        <>
+        <option className="text-black" value="">Lista vacias</option>
+        </> :
+        <>
+        { personajesAll?.map((e, index) => {
+        return (
+          <>
+          <option  className="text-black" key={`${index}`}>{e.name}</option>
+          </>
+        )
+      })}
+        </> 
+        }
+      </select>
+
+      
+      
+
     </div>
   );
 }

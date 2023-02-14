@@ -5,7 +5,7 @@ import Styles from "../../styles/styles";
 
  const Card = ()=> {
     return (
-      <div className={`flex justify-center text-white flex-col h-50  w-40 ${Styles.paddingY}`}>
+      <div className={`flex justify-center text-white flex-col h-50  w-40 p-2 m-2`}>
         <button className={`py-4`}>Ramdon</button>
         <img 
         className="h-30 w-auto" 

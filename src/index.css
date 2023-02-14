@@ -7,3 +7,12 @@ body {
   padding:0;
   
 }
+.colum1 { 
+  grid-area: 1 / 1 / 2 / 2; 
+}
+.colum2 { 
+  grid-area: 2 / 2 / 3 / 3; 
+}
+.colum3 { 
+  grid-area: 3 / 3 / 4 / 4; 
+}
