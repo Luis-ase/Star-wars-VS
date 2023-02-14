@@ -1,3 +1,22 @@
 .bg-url-Space{
   background-image: url("https://www.gratistodo.com/wp-content/uploads/2016/08/Gifs-del-Universo.gif");
 }
+
+/* .parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .div1 { grid-area: 1 / 1 / 2 / 2; }
+  .div2 { grid-area: 2 / 2 / 3 / 3; }
+  .div3 { grid-area: 3 / 3 / 4 / 4; } */
+
+
+  /* <div class="parent">
+<div class="div1"> </div>
+<div class="div2"> </div>
+<div class="div3"> </div>
+</div> */

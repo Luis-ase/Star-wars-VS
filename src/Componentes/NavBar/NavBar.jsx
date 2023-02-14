@@ -1,7 +1,10 @@
+import Inputs from "../input/input";
+
 function NavBar() {
     return (
         <div >
-            navbar
+            <Inputs/>
+            <Inputs/>
         </div>
     );
 }
