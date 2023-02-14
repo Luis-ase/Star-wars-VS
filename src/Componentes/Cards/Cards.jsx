@@ -3,13 +3,13 @@ import React from "react";
 
 
 
- const List = ()=> {
+ const Cards = ()=> {
     return (
       <div className="App">
-        
+        cards
       </div>
     );
   }
   
 
-  export default List;
+  export default Cards;
