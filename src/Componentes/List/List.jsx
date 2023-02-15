@@ -11,7 +11,7 @@ const List = ({ TodoslosPjtas, personajesAll }) => {
       <button
         onClick={TodoslosPjtas}
         className="bg-sky-800  p-2 rounded-md m-1" >
-        llenar lista
+        Todos los personajes
       </button>
       
       </>:
@@ -32,14 +32,33 @@ const List = ({ TodoslosPjtas, personajesAll }) => {
         { personajesAll?.map((e, index) => {
         return (
           <>
-          <option  className="text-black" key={`${index}`}>{e.name}</option>
+          <option  className="text-black" key={`${index}`}>
+            <span>
+              {e.name}
+            </span>
+            </option>
           </>
         )
       })}
         </> 
         }
       </select>
+      {/* <div >
 
+        {personajesAll.length === 0 ? 
+        <>
+        </> :
+        <>
+        { personajesAll?.map((e, index) => {
+        return (
+          <>
+          <p  className="text-black" key={`${index}`}>{e.name}</p>
+          </>
+        )
+      })}
+        </> 
+        }
+      </div> */}
       
       
 
